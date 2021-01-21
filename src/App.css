@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+.App-header {
+  height: 50px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+input {
+  padding: 10px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+input:focus {
+  border-color: green;
+}
+.right p {
+  margin-top: 20px;
+}
+
+.right h4 {
+  margin-top: 20px;
+}
+
+.App-title {
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: capitalize;
+}
+.form {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-around;
+}
+.title_heading {
+  text-transform: capitalize;
+  font-size: 22px;
+  margin-left: 10px;
+}
+.publish {
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+.receipe_container {
+  margin: 30px auto;
+}
+
+.btn {
+  border: 1px solid blue;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.receipe_box {
+  display: flex;
+
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.box {
+  margin: 12px;
+  box-shadow: 5px 10px 8px #888888;
+  padding: 5px;
+}
+
+.box_container {
+  width: 80%;
+  margin: 2% auto;
+
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+}
+.foodImage {
+  display: block;
+  width: 50%;
+}
+
+.list_continer {
+  margin-top: 5px;
+  line-height: 2;
+}
+@media only screen and (max-width: 600px) {
+  .box_container {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .foodImage {
+    width: 100%;
+  }
+  .right {
+    margin-top: 20%;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+}
